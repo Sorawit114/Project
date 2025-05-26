@@ -1,32 +1,35 @@
 import pandas as pd
 import joblib
 from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
 
-def load_data(path):
-    df = pd.read_csv(path)
-    # สมมติคอลัมน์จริงในไฟล์มี 7 ตัว เช่น
-    # Date, Price, Close, High, Low, Volume, Ticker
-    df.columns = ['Date', 'Price', 'Close', 'High', 'Low', 'Volume', 'Ticker']
-    df['Date'] = pd.to_datetime(df['Date'])
-    for col in ['Price', 'Close', 'High', 'Low', 'Volume']:
-        df[col] = pd.to_numeric(df[col], errors='coerce')
+def load_data(filename):
+    df = pd.read_csv(filename)
+    df['Date'] = pd.to_datetime(df['Date'], utc=True)
+    df['Date'] = df['Date'].map(pd.Timestamp.toordinal)
     df = df.dropna()
     return df
 
-def prepare_features(df):
-    X = df[['Price', 'High', 'Low', 'Volume']]
+def train_model(df):
+    X = df[['Date', 'Open', 'High', 'Low', 'Volume']]
     y = df['Close']
-    return X, y
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-def train_and_save_model(data_path, model_path):
-    df = load_data(data_path)
-    X, y = prepare_features(df)
     model = LinearRegression()
-    model.fit(X, y)
-    joblib.dump(model, model_path)
-    print(f"Model saved to {model_path}")
+    model.fit(X_train, y_train)
 
-if __name__ == '__main__':
-    data_path = 'data/stock_data.csv'  # เปลี่ยนเป็นไฟล์ข้อมูลของคุณ
-    model_path = 'model.joblib'
-    train_and_save_model(data_path, model_path)
+    y_pred = model.predict(X_test)
+    mse = mean_squared_error(y_test, y_pred)
+    print(f"Mean Squared Error: {mse}")
+
+    return model
+
+def save_model(model, filename):
+    joblib.dump(model, filename)
+    print(f"Model saved to {filename}")
+
+if __name__ == "__main__":
+    df = load_data('stock_data.csv')
+    model = train_model(df)
+    save_model(model, 'stock_predictor_model.pkl')
