@@ -11,6 +11,7 @@ def fetch_stock_data(ticker, start_date, end_date):
     return df
 
 def save_to_csv(df, filename):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
     df.to_csv(filename, index=False)
 
 if __name__ == "__main__":
@@ -21,6 +22,5 @@ if __name__ == "__main__":
         df = fetch_stock_data(ticker, '2020-01-01', '2023-01-01')
         all_data = pd.concat([all_data, df])
 
-    os.makedirs('data/raw', exist_ok=True)
     save_to_csv(all_data, 'data/raw/stock_data.csv')
     print("Data fetched and saved to 'data/raw/stock_data.csv'")
