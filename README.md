@@ -5,7 +5,7 @@
 ---
 
 ## 🗂️ โครงสร้างโปรเจกต์
-
+```bash
 Project/
 │
 ├── data/
@@ -24,13 +24,12 @@ Project/
 │
 ├── requirements.txt # รายชื่อไลบรารีที่ใช้
 └── README.md # คู่มือใช้งาน (ไฟล์นี้)
-
+```
 ---
 
 ## 🛠️ การติดตั้งและใช้งาน
-
-### 1. คลอนโปรเจกต์นี้
 ```bash
+1. คลอนโปรเจกต์นี้
 git clone https://github.com/your-username/stock-pattern-detector.git
 cd stock-pattern-detector
 📌 หรือดาวน์โหลด ZIP แล้วแตกไฟล์
@@ -53,5 +52,5 @@ python scripts/predict.py
 python -m streamlit run scripts/app.py
 แล้วเปิดเบราว์เซอร์ที่
 👉 http://localhost:8501
-
-ขอให้รวยทุกคนครับ 💸📊
+```
+### ขอให้รวยทุกคนครับ 💸📊
