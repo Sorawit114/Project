@@ -53,4 +53,5 @@ python -m streamlit run scripts/app.py
 แล้วเปิดเบราว์เซอร์ที่
 👉 http://localhost:8501
 ```
+---
 # ขอให้รวยทุกคนครับ 💸📊
