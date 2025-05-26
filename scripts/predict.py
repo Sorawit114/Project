@@ -8,12 +8,19 @@ def load_model(filename):
 
 def predict_price(model, date, open_price, high_price, low_price, volume):
     date_ordinal = datetime.strptime(date, '%Y-%m-%d').toordinal()
-    features = [[date_ordinal, open_price, high_price, low_price, volume]]
+    features = pd.DataFrame({
+        'Date': [date_ordinal],
+        'Open': [open_price],
+        'High': [high_price],
+        'Low': [low_price],
+        'Volume': [volume]
+    })
     predicted_price = model.predict(features)
     return predicted_price[0]
 
+
 if __name__ == "__main__":
-    model = load_model('stock_predictor_model.pkl')
+    model = load_model('models/stock_predictor.pkl')
 
     date = '2023-01-01'
     open_price = 150.0

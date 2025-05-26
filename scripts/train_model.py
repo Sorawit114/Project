@@ -3,12 +3,10 @@ import joblib
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
+import os
 
 def load_data(filename):
     df = pd.read_csv(filename)
-    df['Date'] = pd.to_datetime(df['Date'], utc=True)
-    df['Date'] = df['Date'].map(pd.Timestamp.toordinal)
-    df = df.dropna()
     return df
 
 def train_model(df):
@@ -30,6 +28,7 @@ def save_model(model, filename):
     print(f"Model saved to {filename}")
 
 if __name__ == "__main__":
-    df = load_data('stock_data.csv')
+    df = load_data('data/processed/processed_data.csv')
     model = train_model(df)
-    save_model(model, 'stock_predictor_model.pkl')
+    os.makedirs('models', exist_ok=True)
+    save_model(model, 'models/stock_predictor.pkl')
