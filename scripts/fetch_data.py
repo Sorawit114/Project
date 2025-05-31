@@ -1,26 +1,28 @@
 import yfinance as yf
 import pandas as pd
+from datetime import datetime
 import os
 
-def fetch_stock_data(ticker, start_date, end_date):
-    stock = yf.Ticker(ticker)
-    df = stock.history(start=start_date, end=end_date)
-    df['Ticker'] = ticker
-    df.reset_index(inplace=True)
-    df = df[['Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Ticker']]
-    return df
 
-def save_to_csv(df, filename):
-    os.makedirs(os.path.dirname(filename), exist_ok=True)
-    df.to_csv(filename, index=False)
+def fetch_sp500_data(start_date="1900-01-01", end_date=None, save_path="../Project/data/raw/stock_data.csv"):
+    if end_date is None:
+        end_date = datetime.now().strftime('%Y-%m-%d')
+
+    print(f"Fetching S&P 500 data from {start_date} to {end_date}...")
+    ticker = "^GSPC"  # S&P 500 index symbol on Yahoo Finance
+
+    data = yf.download(ticker, start=start_date, end=end_date)
+
+    if data.empty:
+        print("No data fetched. Please check the ticker or date range.")
+        return
+
+    # Ensure save directory exists
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    data.reset_index(inplace=True)
+    data.to_csv(save_path, index=False)
+    print(f"Data saved to {save_path}")
+
 
 if __name__ == "__main__":
-    tickers = ['AAPL', 'GOOGL', 'AMZN', 'MSFT', 'TSLA']
-    all_data = pd.DataFrame()
-
-    for ticker in tickers:
-        df = fetch_stock_data(ticker, '2020-01-01', '2023-01-01')
-        all_data = pd.concat([all_data, df])
-
-    save_to_csv(all_data, 'data/raw/stock_data.csv')
-    print("Data fetched and saved to 'data/raw/stock_data.csv'")
+    fetch_sp500_data()

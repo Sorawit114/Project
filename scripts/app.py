@@ -1,22 +1,54 @@
 import streamlit as st
-from datetime import datetime
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 import joblib
-from recommend import recommend_action
+from tensorflow.keras.models import load_model
+from scripts.fetch_data import fetch_sp500_data
+from datetime import datetime
+import os
 
-st.title("📈 Stock Price Predictor")
+# Paths
+DATA_PATH = "data/raw/stock_data.csv"
+MODEL_PATH = "models/stock_lstm_model.h5"
+SCALER_PATH = "models/stock_scaler.pkl"
 
-model = joblib.load('models/stock_predictor.pkl')
+st.title("S&P 500 Trend Prediction App")
 
-date = st.date_input("Date", datetime(2023, 1, 1))
-open_price = st.number_input("Open Price", value=150.0)
-high_price = st.number_input("High Price", value=155.0)
-low_price = st.number_input("Low Price", value=148.0)
-volume = st.number_input("Volume", value=1000000)
+# Section: Load or Fetch Data
+if st.button("📥 Load latest S&P 500 data"):
+    fetch_sp500_data(save_path=DATA_PATH)
+    st.success("Data fetched and saved!")
 
-if st.button("Predict"):
-    ordinal = date.toordinal()
-    features = [[ordinal, open_price, high_price, low_price, volume]]
-    predicted_price = model.predict(features)[0]
-    action = recommend_action(open_price, predicted_price)
-    st.success(f"Predicted Close Price: ${predicted_price:.2f}")
-    st.info(f"Recommendation: {action}")
+# Show raw data
+if os.path.exists(DATA_PATH):
+    df = pd.read_csv(DATA_PATH)
+    st.subheader("📊 Recent Data")
+    st.dataframe(df.tail(100))
+
+# Predict future price
+if st.button("📈 Predict next price"):
+    if os.path.exists(MODEL_PATH) and os.path.exists(SCALER_PATH):
+        model = load_model(MODEL_PATH)
+        scaler = joblib.load(SCALER_PATH)
+
+        # Prepare data
+        close_prices = df[['Close']].values
+        last_60 = close_prices[-60:]
+        scaled = scaler.transform(last_60)
+        X_pred = np.reshape(scaled, (1, 60, 1))
+
+        # Predict
+        predicted_scaled = model.predict(X_pred)
+        predicted_price = scaler.inverse_transform(predicted_scaled)
+        st.metric("📌 Predicted Next Closing Price", f"{predicted_price[0][0]:.2f} USD")
+
+        # Plot
+        st.subheader("📉 Price Trend")
+        fig, ax = plt.subplots()
+        ax.plot(df['Date'].tail(60), close_prices[-60:], label='Actual')
+        ax.scatter(df['Date'].iloc[-1], predicted_price, color='red', label='Predicted')
+        ax.legend()
+        st.pyplot(fig)
+    else:
+        st.error("Model or scaler not found. Please train the model first.")
