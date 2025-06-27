@@ -1,113 +1,793 @@
-Date,Pattern
-2022-02-07,BearishEngulfing
-2022-02-09,Doji
-2022-03-10,Hammer
-2022-04-01,Doji
-2022-04-13,BullishEngulfing
-2022-04-14,BearishEngulfing
-2022-04-25,Hammer
-2022-05-02,Hammer
-2022-05-12,Doji
-2022-05-16,Doji
-2022-05-17,Doji
-2022-05-24,Doji
-2022-05-31,Doji
-2022-06-02,BullishEngulfing
-2022-06-07,BullishEngulfing
-2022-06-14,Doji
-2022-07-01,BullishEngulfing
-2022-07-12,Doji
-2022-07-18,BearishEngulfing
-2022-07-22,BearishEngulfing
-2022-07-28,Doji
-2022-08-02,Doji
-2022-08-04,Doji
-2022-08-16,Doji
-2022-08-23,Doji
-2022-08-24,Doji
-2022-08-26,BearishEngulfing
-2022-08-29,Doji
-2022-08-30,BearishEngulfing
-2022-09-02,BearishEngulfing
-2022-09-08,Doji
-2022-09-16,Hammer
-2022-09-19,BullishEngulfing
-2022-09-22,Doji
-2022-09-23,Hammer
-2022-10-06,Doji
-2022-10-10,Doji
-2022-10-13,BullishEngulfing
-2022-10-20,Doji
-2022-10-31,Doji
-2022-11-01,BearishEngulfing
-2022-11-16,Doji
-2022-11-17,BullishEngulfing
-2022-11-25,Doji
-2022-12-01,Doji
-2022-12-08,Doji
-2022-12-09,Doji
-2023-01-03,BearishEngulfing
-2023-01-09,Doji
-2023-01-09,ShootingStar
-2023-01-13,BullishEngulfing
-2023-02-07,BullishEngulfing
-2023-02-16,Doji
-2023-02-17,Doji
-2023-02-22,Doji
-2023-02-24,Hammer
-2023-02-27,Doji
-2023-02-27,ShootingStar
-2023-03-06,Doji
-2023-03-08,Doji
-2023-03-09,BearishEngulfing
-2023-03-13,BullishEngulfing
-2023-03-23,Doji
-2023-03-28,Doji
-2023-04-10,Hammer
-2023-04-11,BearishEngulfing
-2023-04-17,Doji
-2023-04-21,Doji
-2023-04-24,BullishEngulfing
-2023-05-02,BearishEngulfing
-2023-05-11,Doji
-2023-05-16,Doji
-2023-05-17,Hammer
-2023-05-31,Doji
-2023-06-02,Doji
-2023-06-22,BullishEngulfing
-2023-06-26,BearishEngulfing
-2023-07-05,Doji
-2023-07-06,BullishEngulfing
-2023-07-12,Doji
-2023-07-13,Doji
-2023-07-25,Doji
-2023-07-27,BearishEngulfing
-2023-08-08,Doji
-2023-08-09,BearishEngulfing
-2023-08-22,Doji
-2023-08-28,Doji
-2023-08-31,Doji
-2023-09-01,Doji
-2023-09-05,BullishEngulfing
-2023-09-08,Doji
-2023-09-20,BearishEngulfing
-2023-09-22,Doji
-2023-10-03,Doji
-2023-10-10,Doji
-2023-10-13,BearishEngulfing
-2023-10-18,Doji
-2023-10-19,BearishEngulfing
-2023-11-14,Doji
-2023-11-15,Doji
-2023-11-15,ShootingStar
-2023-11-16,Doji
-2023-11-22,Doji
-2023-11-27,Doji
-2023-11-28,BullishEngulfing
-2023-11-29,BearishEngulfing
-2023-11-30,Doji
-2023-12-04,Hammer
-2023-12-11,Doji
-2023-12-14,Doji
-2023-12-15,Doji
-2023-12-18,Doji
+Date,Pattern,CandleColor
+2022-01-25,Spinning Top_Bullish,Green
+2022-01-31,Long Line_Bullish,Green
+2022-02-01,Hanging Man_Bearish,Green
+2022-02-01,Harami_Bearish,Green
+2022-02-02,Hanging Man_Bearish,Green
+2022-02-04,Spinning Top_Bullish,Green
+2022-02-07,Short Line_Bearish,Red
+2022-02-07,Bullish Engulfing_Bearish,Red
+2022-02-07,Bearish Engulfing_Bearish,Red
+2022-02-08,Long Line_Bullish,Green
+2022-02-08,Belt Hold_Bullish,Green
+2022-02-09,Doji_Bullish,Green
+2022-02-09,Dragonfly Doji_Bullish,Green
+2022-02-09,Long Legged Doji_Bullish,Green
+2022-02-09,Spinning Top_Bullish,Green
+2022-02-09,Hanging Man_Bearish,Green
+2022-02-09,Rickshaw Man_Bullish,Green
+2022-02-09,Takuri_Bullish,Green
+2022-02-11,Long Line_Bearish,Red
+2022-02-14,Short Line_Bullish,Green
+2022-02-15,Long Line_Bullish,Green
+2022-02-16,Spinning Top_Bullish,Green
+2022-02-16,Harami_Bearish,Green
+2022-02-17,Long Line_Bearish,Red
+2022-02-17,Three Inside Up/Down_Bearish,Red
+2022-02-22,Spinning Top_Bearish,Red
+2022-02-23,Long Line_Bearish,Red
+2022-02-24,Long Line_Bullish,Green
+2022-02-25,Hanging Man_Bearish,Green
+2022-02-28,Short Line_Bullish,Green
+2022-03-03,Short Line_Bearish,Red
+2022-03-08,Spinning Top_Bearish,Red
+2022-03-10,Hammer_Bullish,Red
+2022-03-11,Long Line_Bearish,Red
+2022-03-11,Marubozu_Bearish,Red
+2022-03-11,Belt Hold_Bearish,Red
+2022-03-15,Long Line_Bullish,Green
+2022-03-15,X Side Gap Three Methods_Bearish,Green
+2022-03-17,Short Line_Bullish,Green
+2022-03-18,Long Line_Bullish,Green
+2022-03-21,Short Line_Bullish,Green
+2022-03-22,Long Line_Bullish,Green
+2022-03-24,Long Line_Bullish,Green
+2022-03-28,Long Line_Bullish,Green
+2022-03-28,Marubozu_Bullish,Green
+2022-03-28,Belt Hold_Bullish,Green
+2022-03-29,Short Line_Bullish,Green
+2022-03-30,Spinning Top_Bearish,Red
+2022-03-31,Long Line_Bearish,Red
+2022-03-31,Marubozu_Bearish,Red
+2022-03-31,Belt Hold_Bearish,Red
+2022-04-01,Doji_Bullish,Green
+2022-04-01,Long Legged Doji_Bullish,Green
+2022-04-01,Spinning Top_Bullish,Green
+2022-04-01,On Neck_Bearish,Green
+2022-04-04,Long Line_Bullish,Green
+2022-04-04,Marubozu_Bullish,Green
+2022-04-04,Belt Hold_Bullish,Green
+2022-04-04,Morning Star_Bullish,Green
+2022-04-04,Morning Doji Star_Bullish,Green
+2022-04-06,Spinning Top_Bearish,Red
+2022-04-07,Spinning Top_Bullish,Green
+2022-04-11,Long Line_Bearish,Red
+2022-04-11,Marubozu_Bearish,Red
+2022-04-11,Belt Hold_Bearish,Red
+2022-04-12,Spinning Top_Bearish,Red
+2022-04-12,Harami_Bullish,Red
+2022-04-12,Homing Pigeon_Bullish,Red
+2022-04-13,Long Line_Bullish,Green
+2022-04-13,Bullish Engulfing_Bullish,Green
+2022-04-13,Bearish Engulfing_Bullish,Green
+2022-04-13,Three Inside Up/Down_Bullish,Green
+2022-04-14,Long Line_Bearish,Red
+2022-04-14,Bullish Engulfing_Bearish,Red
+2022-04-14,Bearish Engulfing_Bearish,Red
+2022-04-18,Inverted Hammer_Bullish,Green
+2022-04-18,On Neck_Bearish,Green
+2022-04-18,Three Outside Up/Down_Bearish,Green
+2022-04-19,Morning Star_Bullish,Green
+2022-04-25,Hammer_Bullish,Green
+2022-04-26,Long Line_Bearish,Red
+2022-04-26,Marubozu_Bearish,Red
+2022-04-26,Belt Hold_Bearish,Red
+2022-04-27,On Neck_Bearish,Green
+2022-04-28,Long Line_Bullish,Green
+2022-04-28,Belt Hold_Bullish,Green
+2022-04-28,Morning Star_Bullish,Green
+2022-04-29,Tasukigap_Bullish,Red
+2022-05-02,Hammer_Bullish,Green
+2022-05-04,Long Line_Bullish,Green
+2022-05-04,Marubozu_Bullish,Green
+2022-05-04,Belt Hold_Bullish,Green
+2022-05-05,Belt Hold_Bearish,Red
+2022-05-06,Spinning Top_Bullish,Green
+2022-05-09,Short Line_Bearish,Red
+2022-05-10,Spinning Top_Bearish,Red
+2022-05-12,Doji_Bullish,Red
+2022-05-12,Long Legged Doji_Bullish,Red
+2022-05-12,Spinning Top_Bearish,Red
+2022-05-12,Rickshaw Man_Bullish,Red
+2022-05-13,Short Line_Bullish,Green
+2022-05-16,Doji_Bullish,Red
+2022-05-16,Long Legged Doji_Bullish,Red
+2022-05-16,Spinning Top_Bearish,Red
+2022-05-16,Rickshaw Man_Bullish,Red
+2022-05-17,Doji_Bullish,Green
+2022-05-17,Dragonfly Doji_Bullish,Green
+2022-05-17,Long Legged Doji_Bullish,Green
+2022-05-17,Spinning Top_Bullish,Green
+2022-05-17,Hanging Man_Bearish,Green
+2022-05-17,Rickshaw Man_Bullish,Green
+2022-05-17,Takuri_Bullish,Green
+2022-05-18,Long Line_Bearish,Red
+2022-05-18,Belt Hold_Bearish,Red
+2022-05-20,Spinning Top_Bearish,Red
+2022-05-20,Matching Low_Bullish,Red
+2022-05-23,Long Line_Bullish,Green
+2022-05-23,Marubozu_Bullish,Green
+2022-05-23,Belt Hold_Bullish,Green
+2022-05-24,Doji_Bullish,Red
+2022-05-24,Long Legged Doji_Bullish,Red
+2022-05-24,Spinning Top_Bearish,Red
+2022-05-24,Rickshaw Man_Bullish,Red
+2022-05-24,Harami_Bearish,Red
+2022-05-24,Harami Cross_Bearish,Red
+2022-05-25,Short Line_Bullish,Green
+2022-05-26,Long Line_Bullish,Green
+2022-05-26,Belt Hold_Bullish,Green
+2022-05-27,Long Line_Bullish,Green
+2022-05-27,Marubozu_Bullish,Green
+2022-05-27,Belt Hold_Bullish,Green
+2022-05-31,Doji_Bullish,Red
+2022-05-31,Long Legged Doji_Bullish,Red
+2022-05-31,Spinning Top_Bearish,Red
+2022-05-31,Rickshaw Man_Bullish,Red
+2022-05-31,Harami_Bearish,Red
+2022-05-31,Harami Cross_Bearish,Red
+2022-06-01,Matching Low_Bullish,Red
+2022-06-02,Long Line_Bullish,Green
+2022-06-02,Bullish Engulfing_Bullish,Green
+2022-06-02,Bearish Engulfing_Bullish,Green
+2022-06-03,Short Line_Bearish,Red
+2022-06-06,Spinning Top_Bearish,Red
+2022-06-07,Long Line_Bullish,Green
+2022-06-07,Marubozu_Bullish,Green
+2022-06-07,Bullish Engulfing_Bullish,Green
+2022-06-07,Bearish Engulfing_Bullish,Green
+2022-06-07,Belt Hold_Bullish,Green
+2022-06-08,Harami_Bearish,Red
+2022-06-09,Three Inside Up/Down_Bearish,Red
+2022-06-10,Long Line_Bearish,Red
+2022-06-14,Doji_Bullish,Red
+2022-06-14,Long Legged Doji_Bullish,Red
+2022-06-14,Spinning Top_Bearish,Red
+2022-06-14,Rickshaw Man_Bullish,Red
+2022-06-15,Spinning Top_Bullish,Green
+2022-06-21,Belt Hold_Bullish,Green
+2022-06-22,Spinning Top_Bullish,Green
+2022-06-22,Harami_Bearish,Green
+2022-06-24,Short Line_Bullish,Green
+2022-06-27,Short Line_Bearish,Red
+2022-06-30,Spinning Top_Bearish,Red
+2022-07-01,Long Line_Bullish,Green
+2022-07-01,Bullish Engulfing_Bullish,Green
+2022-07-01,Bearish Engulfing_Bullish,Green
+2022-07-05,Long Line_Bullish,Green
+2022-07-05,Three Outside Up/Down_Bullish,Green
+2022-07-06,Stalled Pattern_Bearish,Green
+2022-07-07,Long Line_Bullish,Green
+2022-07-07,Marubozu_Bullish,Green
+2022-07-07,Belt Hold_Bullish,Green
+2022-07-08,Short Line_Bullish,Green
+2022-07-11,Spinning Top_Bearish,Red
+2022-07-12,Doji_Bullish,Green
+2022-07-12,Long Legged Doji_Bullish,Green
+2022-07-12,Spinning Top_Bullish,Green
+2022-07-14,Long Line_Bullish,Green
+2022-07-15,Spinning Top_Bullish,Green
+2022-07-18,Bullish Engulfing_Bearish,Red
+2022-07-18,Bearish Engulfing_Bearish,Red
+2022-07-18,Evening Star_Bearish,Red
+2022-07-20,Short Line_Bullish,Green
+2022-07-21,Hanging Man_Bearish,Green
+2022-07-22,Short Line_Bearish,Red
+2022-07-22,Bullish Engulfing_Bearish,Red
+2022-07-22,Bearish Engulfing_Bearish,Red
+2022-07-25,Three Outside Up/Down_Bearish,Red
+2022-07-26,Short Line_Bearish,Red
+2022-07-26,Spinning Top_Bearish,Red
+2022-07-27,Long Line_Bullish,Green
+2022-07-28,Doji_Bullish,Green
+2022-07-28,Dragonfly Doji_Bullish,Green
+2022-07-28,Long Legged Doji_Bullish,Green
+2022-07-28,Hanging Man_Bearish,Green
+2022-07-28,Takuri_Bullish,Green
+2022-08-02,Doji_Bullish,Red
+2022-08-02,Long Legged Doji_Bullish,Red
+2022-08-02,Spinning Top_Bearish,Red
+2022-08-03,Long Line_Bullish,Green
+2022-08-03,Belt Hold_Bullish,Green
+2022-08-04,Doji_Bullish,Red
+2022-08-04,Long Legged Doji_Bullish,Red
+2022-08-04,Spinning Top_Bearish,Red
+2022-08-04,Rickshaw Man_Bullish,Red
+2022-08-04,Harami_Bearish,Red
+2022-08-04,Harami Cross_Bearish,Red
+2022-08-05,Long Line_Bullish,Green
+2022-08-05,Belt Hold_Bullish,Green
+2022-08-09,Short Line_Bullish,Green
+2022-08-10,Short Line_Bullish,Green
+2022-08-11,Long Line_Bearish,Red
+2022-08-12,Long Line_Bullish,Green
+2022-08-15,Long Line_Bullish,Green
+2022-08-15,Marubozu_Bullish,Green
+2022-08-15,Belt Hold_Bullish,Green
+2022-08-16,Doji_Bullish,Green
+2022-08-16,Long Legged Doji_Bullish,Green
+2022-08-16,Spinning Top_Bullish,Green
+2022-08-16,Rickshaw Man_Bullish,Green
+2022-08-16,Harami_Bearish,Green
+2022-08-16,Harami Cross_Bearish,Green
+2022-08-17,Belt Hold_Bullish,Green
+2022-08-18,Spinning Top_Bullish,Green
+2022-08-18,Harami_Bearish,Green
+2022-08-19,Three Inside Up/Down_Bearish,Red
+2022-08-22,Long Line_Bearish,Red
+2022-08-22,Belt Hold_Bearish,Red
+2022-08-23,Doji_Bullish,Green
+2022-08-23,Long Legged Doji_Bullish,Green
+2022-08-23,Spinning Top_Bullish,Green
+2022-08-23,Rickshaw Man_Bullish,Green
+2022-08-23,On Neck_Bearish,Green
+2022-08-24,Doji_Bullish,Green
+2022-08-24,Long Legged Doji_Bullish,Green
+2022-08-24,Spinning Top_Bullish,Green
+2022-08-24,Rickshaw Man_Bullish,Green
+2022-08-25,Long Line_Bullish,Green
+2022-08-26,Long Line_Bearish,Red
+2022-08-26,Bullish Engulfing_Bearish,Red
+2022-08-26,Bearish Engulfing_Bearish,Red
+2022-08-29,Doji_Bullish,Green
+2022-08-29,Long Legged Doji_Bullish,Green
+2022-08-29,Spinning Top_Bullish,Green
+2022-08-29,Rickshaw Man_Bullish,Green
+2022-08-29,Three Outside Up/Down_Bearish,Green
+2022-08-30,Bullish Engulfing_Bearish,Red
+2022-08-30,Bearish Engulfing_Bearish,Red
+2022-08-31,Long Line_Bearish,Red
+2022-08-31,Marubozu_Bearish,Red
+2022-08-31,Belt Hold_Bearish,Red
+2022-08-31,Three Outside Up/Down_Bearish,Red
+2022-09-02,Bullish Engulfing_Bearish,Red
+2022-09-02,Bearish Engulfing_Bearish,Red
+2022-09-06,Three Outside Up/Down_Bearish,Red
+2022-09-08,Doji_Bullish,Red
+2022-09-08,Long Legged Doji_Bullish,Red
+2022-09-08,Spinning Top_Bearish,Red
+2022-09-08,Rickshaw Man_Bullish,Red
+2022-09-09,Short Line_Bullish,Green
+2022-09-12,Long Line_Bullish,Green
+2022-09-12,Belt Hold_Bullish,Green
+2022-09-13,Long Line_Bearish,Red
+2022-09-14,Spinning Top_Bullish,Green
+2022-09-14,Harami_Bullish,Green
+2022-09-16,Hammer_Bullish,Red
+2022-09-19,Long Line_Bullish,Green
+2022-09-19,Marubozu_Bullish,Green
+2022-09-19,Bullish Engulfing_Bullish,Green
+2022-09-19,Bearish Engulfing_Bullish,Green
+2022-09-19,Belt Hold_Bullish,Green
+2022-09-20,Belt Hold_Bullish,Green
+2022-09-20,Three Outside Up/Down_Bullish,Green
+2022-09-22,Doji_Bullish,Green
+2022-09-22,Long Legged Doji_Bullish,Green
+2022-09-22,Spinning Top_Bullish,Green
+2022-09-22,Rickshaw Man_Bullish,Green
+2022-09-23,Hammer_Bullish,Red
+2022-09-27,Spinning Top_Bearish,Red
+2022-10-03,Long Line_Bullish,Green
+2022-10-04,Short Line_Bullish,Green
+2022-10-05,Long Line_Bullish,Green
+2022-10-06,Doji_Bullish,Red
+2022-10-06,Gravestone Doji_Bullish,Red
+2022-10-06,Long Legged Doji_Bullish,Red
+2022-10-06,Harami_Bearish,Red
+2022-10-06,Harami Cross_Bearish,Red
+2022-10-07,Long Line_Bearish,Red
+2022-10-07,Three Inside Up/Down_Bearish,Red
+2022-10-10,Doji_Bullish,Green
+2022-10-10,Long Legged Doji_Bullish,Green
+2022-10-10,Spinning Top_Bullish,Green
+2022-10-10,Rickshaw Man_Bullish,Green
+2022-10-10,Harami_Bullish,Green
+2022-10-10,Harami Cross_Bullish,Green
+2022-10-13,Long Line_Bullish,Green
+2022-10-13,Bullish Engulfing_Bullish,Green
+2022-10-13,Bearish Engulfing_Bullish,Green
+2022-10-14,Long Line_Bearish,Red
+2022-10-14,Marubozu_Bearish,Red
+2022-10-14,Belt Hold_Bearish,Red
+2022-10-17,Harami_Bullish,Green
+2022-10-20,Doji_Bullish,Green
+2022-10-20,Gravestone Doji_Bullish,Green
+2022-10-20,Long Legged Doji_Bullish,Green
+2022-10-20,Spinning Top_Bullish,Green
+2022-10-20,Rickshaw Man_Bullish,Green
+2022-10-21,Long Line_Bullish,Green
+2022-10-21,Belt Hold_Bullish,Green
+2022-10-25,Short Line_Bullish,Green
+2022-10-26,X Side Gap Three Methods_Bullish,Red
+2022-10-28,Separating Lines_Bullish,Green
+2022-10-28,Belt Hold_Bullish,Green
+2022-10-31,Doji_Bullish,Green
+2022-10-31,Long Legged Doji_Bullish,Green
+2022-10-31,Spinning Top_Bullish,Green
+2022-10-31,Rickshaw Man_Bullish,Green
+2022-10-31,Harami_Bearish,Green
+2022-10-31,Harami Cross_Bearish,Green
+2022-11-01,Bullish Engulfing_Bearish,Red
+2022-11-01,Bearish Engulfing_Bearish,Red
+2022-11-01,Belt Hold_Bearish,Red
+2022-11-02,Three Outside Up/Down_Bearish,Red
+2022-11-03,Long Line_Bearish,Red
+2022-11-04,Matching Low_Bullish,Red
+2022-11-08,Spinning Top_Bearish,Red
+2022-11-09,Long Line_Bearish,Red
+2022-11-09,Marubozu_Bearish,Red
+2022-11-09,Belt Hold_Bearish,Red
+2022-11-14,Spinning Top_Bearish,Red
+2022-11-14,Harami_Bearish,Red
+2022-11-16,Doji_Bullish,Red
+2022-11-16,Long Legged Doji_Bullish,Red
+2022-11-16,Spinning Top_Bearish,Red
+2022-11-16,Rickshaw Man_Bullish,Red
+2022-11-17,Long Line_Bullish,Green
+2022-11-17,Bullish Engulfing_Bullish,Green
+2022-11-17,Bearish Engulfing_Bullish,Green
+2022-11-17,Belt Hold_Bullish,Green
+2022-11-18,Hanging Man_Bearish,Red
+2022-11-18,Three Outside Up/Down_Bullish,Red
+2022-11-21,Short Line_Bearish,Red
+2022-11-22,Tasukigap_Bearish,Green
+2022-11-23,Short Line_Bullish,Green
+2022-11-25,Doji_Bullish,Red
+2022-11-25,Long Legged Doji_Bullish,Red
+2022-11-25,Spinning Top_Bearish,Red
+2022-11-25,Rickshaw Man_Bullish,Red
+2022-11-29,Long Line_Bearish,Red
+2022-12-01,Doji_Bullish,Green
+2022-12-01,Long Legged Doji_Bullish,Green
+2022-12-01,Spinning Top_Bullish,Green
+2022-12-01,Rickshaw Man_Bullish,Green
+2022-12-02,Short Line_Bullish,Green
+2022-12-06,Belt Hold_Bearish,Red
+2022-12-08,Doji_Bullish,Green
+2022-12-08,Long Legged Doji_Bullish,Green
+2022-12-08,Spinning Top_Bullish,Green
+2022-12-08,Rickshaw Man_Bullish,Green
+2022-12-09,Doji_Bullish,Red
+2022-12-09,Long Legged Doji_Bullish,Red
+2022-12-09,Spinning Top_Bearish,Red
+2022-12-15,Long Line_Bearish,Red
+2022-12-16,Long Line_Bearish,Red
+2022-12-19,Long Line_Bearish,Red
+2022-12-19,Belt Hold_Bearish,Red
+2022-12-20,Spinning Top_Bullish,Green
+2022-12-21,Belt Hold_Bullish,Green
+2022-12-21,Morning Star_Bullish,Green
+2022-12-22,X Side Gap Three Methods_Bullish,Red
+2022-12-29,Short Line_Bullish,Green
+2022-12-29,Harami_Bullish,Green
+2022-12-30,Three Inside Up/Down_Bullish,Green
+2023-01-03,Bullish Engulfing_Bearish,Red
+2023-01-03,Bearish Engulfing_Bearish,Red
+2023-01-04,Spinning Top_Bearish,Red
+2023-01-04,Harami_Bullish,Red
+2023-01-04,Homing Pigeon_Bullish,Red
+2023-01-05,Long Line_Bearish,Red
+2023-01-09,Doji_Bullish,Red
+2023-01-09,Gravestone Doji_Bullish,Red
+2023-01-09,Long Legged Doji_Bullish,Red
+2023-01-09,Shooting Star_Bearish,Red
+2023-01-10,Spinning Top_Bullish,Green
+2023-01-11,Long Line_Bullish,Green
+2023-01-12,Hanging Man_Bearish,Red
+2023-01-13,Long Line_Bullish,Green
+2023-01-13,Bullish Engulfing_Bullish,Green
+2023-01-13,Bearish Engulfing_Bullish,Green
+2023-01-17,Three Outside Up/Down_Bullish,Green
+2023-01-23,Belt Hold_Bullish,Green
+2023-01-24,Long Line_Bullish,Green
+2023-01-24,Belt Hold_Bullish,Green
+2023-01-25,Harami_Bearish,Green
+2023-01-26,Hanging Man_Bearish,Green
+2023-01-27,Belt Hold_Bullish,Green
+2023-01-30,Long Line_Bearish,Red
+2023-01-31,Short Line_Bullish,Green
+2023-02-02,Long Line_Bullish,Green
+2023-02-03,Belt Hold_Bullish,Green
+2023-02-06,Harami_Bearish,Red
+2023-02-07,Long Line_Bullish,Green
+2023-02-07,Bullish Engulfing_Bullish,Green
+2023-02-07,Bearish Engulfing_Bullish,Green
+2023-02-07,Belt Hold_Bullish,Green
+2023-02-08,Short Line_Bearish,Red
+2023-02-08,Harami_Bearish,Red
+2023-02-09,Long Line_Bearish,Red
+2023-02-10,Short Line_Bullish,Green
+2023-02-13,Long Line_Bullish,Green
+2023-02-13,Belt Hold_Bullish,Green
+2023-02-14,Harami_Bearish,Green
+2023-02-15,Short Line_Bullish,Green
+2023-02-16,Doji_Bullish,Green
+2023-02-16,Gravestone Doji_Bullish,Green
+2023-02-16,Long Legged Doji_Bullish,Green
+2023-02-17,Doji_Bullish,Green
+2023-02-17,Long Legged Doji_Bullish,Green
+2023-02-17,Spinning Top_Bullish,Green
+2023-02-17,Rickshaw Man_Bullish,Green
+2023-02-22,Doji_Bullish,Green
+2023-02-22,Long Legged Doji_Bullish,Green
+2023-02-22,Spinning Top_Bullish,Green
+2023-02-22,Rickshaw Man_Bullish,Green
+2023-02-24,Hammer_Bullish,Red
+2023-02-27,Doji_Bullish,Green
+2023-02-27,Gravestone Doji_Bullish,Green
+2023-02-27,Long Legged Doji_Bullish,Green
+2023-02-27,Spinning Top_Bullish,Green
+2023-02-27,Shooting Star_Bearish,Green
+2023-02-27,Rickshaw Man_Bullish,Green
+2023-02-28,Inverted Hammer_Bullish,Green
+2023-03-01,Long Line_Bearish,Red
+2023-03-02,Long Line_Bullish,Green
+2023-03-03,Long Line_Bullish,Green
+2023-03-06,Doji_Bullish,Green
+2023-03-06,Long Legged Doji_Bullish,Green
+2023-03-06,Spinning Top_Bullish,Green
+2023-03-07,Long Line_Bearish,Red
+2023-03-08,Doji_Bullish,Green
+2023-03-08,Long Legged Doji_Bullish,Green
+2023-03-08,Spinning Top_Bullish,Green
+2023-03-08,Rickshaw Man_Bullish,Green
+2023-03-08,Harami_Bullish,Green
+2023-03-08,Harami Cross_Bullish,Green
+2023-03-09,Bullish Engulfing_Bearish,Red
+2023-03-09,Bearish Engulfing_Bearish,Red
+2023-03-10,Three Outside Up/Down_Bearish,Red
+2023-03-13,Bullish Engulfing_Bullish,Green
+2023-03-13,Bearish Engulfing_Bullish,Green
+2023-03-13,Belt Hold_Bullish,Green
+2023-03-14,Three Outside Up/Down_Bullish,Green
+2023-03-15,Upside Gap Two Crows_Bullish,Green
+2023-03-16,Long Line_Bullish,Green
+2023-03-17,Short Line_Bearish,Red
+2023-03-23,Doji_Bullish,Green
+2023-03-23,Long Legged Doji_Bullish,Green
+2023-03-23,Spinning Top_Bullish,Green
+2023-03-23,Rickshaw Man_Bullish,Green
+2023-03-27,Short Line_Bearish,Red
+2023-03-28,Doji_Bullish,Red
+2023-03-28,Long Legged Doji_Bullish,Red
+2023-03-28,Spinning Top_Bearish,Red
+2023-03-28,Rickshaw Man_Bullish,Red
+2023-03-29,Short Line_Bullish,Green
+2023-03-30,Short Line_Bullish,Green
+2023-03-31,Long Line_Bullish,Green
+2023-04-03,Long Line_Bullish,Green
+2023-04-03,Marubozu_Bullish,Green
+2023-04-03,Belt Hold_Bullish,Green
+2023-04-03,Three White Soldiers_Bullish,Green
+2023-04-04,Short Line_Bearish,Red
+2023-04-06,Long Line_Bullish,Green
+2023-04-10,Hammer_Bullish,Green
+2023-04-11,Long Line_Bearish,Red
+2023-04-11,Bullish Engulfing_Bearish,Red
+2023-04-11,Bearish Engulfing_Bearish,Red
+2023-04-11,Belt Hold_Bearish,Red
+2023-04-12,Three Outside Up/Down_Bearish,Red
+2023-04-13,Long Line_Bullish,Green
+2023-04-13,Belt Hold_Bullish,Green
+2023-04-14,Spinning Top_Bullish,Green
+2023-04-14,Harami_Bearish,Green
+2023-04-17,Doji_Bullish,Green
+2023-04-17,Dragonfly Doji_Bullish,Green
+2023-04-17,Long Legged Doji_Bullish,Green
+2023-04-17,Spinning Top_Bullish,Green
+2023-04-17,Rickshaw Man_Bullish,Green
+2023-04-17,Takuri_Bullish,Green
+2023-04-18,Spinning Top_Bullish,Green
+2023-04-19,Long Line_Bullish,Green
+2023-04-20,Harami_Bearish,Green
+2023-04-21,Doji_Bullish,Red
+2023-04-21,Long Legged Doji_Bullish,Red
+2023-04-21,Spinning Top_Bearish,Red
+2023-04-21,Rickshaw Man_Bullish,Red
+2023-04-21,Three Inside Up/Down_Bearish,Red
+2023-04-24,Bullish Engulfing_Bullish,Green
+2023-04-24,Bearish Engulfing_Bullish,Green
+2023-04-26,On Neck_Bearish,Green
+2023-04-27,Long Line_Bullish,Green
+2023-04-27,Marubozu_Bullish,Green
+2023-04-27,Belt Hold_Bullish,Green
+2023-04-27,Morning Star_Bullish,Green
+2023-04-28,Long Line_Bullish,Green
+2023-05-01,Spinning Top_Bullish,Green
+2023-05-01,Harami_Bearish,Green
+2023-05-02,Bullish Engulfing_Bearish,Red
+2023-05-02,Bearish Engulfing_Bearish,Red
+2023-05-03,Three Outside Up/Down_Bearish,Red
+2023-05-05,Belt Hold_Bullish,Green
+2023-05-05,Morning Star_Bullish,Green
+2023-05-08,Short Line_Bullish,Green
+2023-05-08,Harami_Bearish,Green
+2023-05-09,Short Line_Bearish,Red
+2023-05-11,Doji_Bullish,Red
+2023-05-11,Long Legged Doji_Bullish,Red
+2023-05-11,Spinning Top_Bearish,Red
+2023-05-11,Rickshaw Man_Bullish,Red
+2023-05-15,Short Line_Bearish,Red
+2023-05-16,Doji_Bullish,Green
+2023-05-16,Gravestone Doji_Bullish,Green
+2023-05-16,Long Legged Doji_Bullish,Green
+2023-05-16,Spinning Top_Bullish,Green
+2023-05-16,Rickshaw Man_Bullish,Green
+2023-05-17,Hammer_Bullish,Green
+2023-05-18,Long Line_Bullish,Green
+2023-05-19,Long Line_Bearish,Red
+2023-05-19,Marubozu_Bearish,Red
+2023-05-19,Counterattack_Bearish,Red
+2023-05-19,Belt Hold_Bearish,Red
+2023-05-22,Short Line_Bullish,Green
+2023-05-22,Spinning Top_Bullish,Green
+2023-05-23,Long Line_Bearish,Red
+2023-05-24,Short Line_Bullish,Green
+2023-05-25,Spinning Top_Bullish,Green
+2023-05-26,Long Line_Bullish,Green
+2023-05-30,Spinning Top_Bullish,Green
+2023-05-31,Doji_Bullish,Red
+2023-05-31,Long Legged Doji_Bullish,Red
+2023-05-31,Spinning Top_Bearish,Red
+2023-06-02,Doji_Bullish,Red
+2023-06-02,Long Legged Doji_Bullish,Red
+2023-06-02,Spinning Top_Bearish,Red
+2023-06-02,Rickshaw Man_Bullish,Red
+2023-06-08,Long Line_Bullish,Green
+2023-06-09,Short Line_Bearish,Red
+2023-06-12,Long Line_Bullish,Green
+2023-06-12,Marubozu_Bullish,Green
+2023-06-12,Belt Hold_Bullish,Green
+2023-06-13,Short Line_Bullish,Green
+2023-06-13,Harami_Bearish,Green
+2023-06-15,Long Line_Bullish,Green
+2023-06-15,Belt Hold_Bullish,Green
+2023-06-16,Long Line_Bearish,Red
+2023-06-16,Belt Hold_Bearish,Red
+2023-06-22,Long Line_Bullish,Green
+2023-06-22,Marubozu_Bullish,Green
+2023-06-22,Bullish Engulfing_Bullish,Green
+2023-06-22,Bearish Engulfing_Bullish,Green
+2023-06-22,Belt Hold_Bullish,Green
+2023-06-23,Harami_Bearish,Green
+2023-06-26,Bullish Engulfing_Bearish,Red
+2023-06-26,Bearish Engulfing_Bearish,Red
+2023-06-27,Long Line_Bullish,Green
+2023-06-27,Belt Hold_Bullish,Green
+2023-06-29,Short Line_Bullish,Green
+2023-06-29,Advance Block_Bearish,Green
+2023-07-03,Harami_Bearish,Red
+2023-07-05,Doji_Bullish,Red
+2023-07-05,Long Legged Doji_Bullish,Red
+2023-07-05,Spinning Top_Bearish,Red
+2023-07-05,Rickshaw Man_Bullish,Red
+2023-07-05,Three Inside Up/Down_Bearish,Red
+2023-07-06,Bullish Engulfing_Bullish,Green
+2023-07-06,Bearish Engulfing_Bullish,Green
+2023-07-07,Harami_Bearish,Red
+2023-07-10,Spinning Top_Bearish,Red
+2023-07-10,Three Inside Up/Down_Bearish,Red
+2023-07-12,Doji_Bullish,Green
+2023-07-12,Long Legged Doji_Bullish,Green
+2023-07-12,Spinning Top_Bullish,Green
+2023-07-12,Rickshaw Man_Bullish,Green
+2023-07-13,Doji_Bullish,Green
+2023-07-13,Long Legged Doji_Bullish,Green
+2023-07-13,Short Line_Bullish,Green
+2023-07-13,Spinning Top_Bullish,Green
+2023-07-13,Rickshaw Man_Bullish,Green
+2023-07-14,Short Line_Bullish,Green
+2023-07-14,Spinning Top_Bullish,Green
+2023-07-17,Long Line_Bullish,Green
+2023-07-17,Belt Hold_Bullish,Green
+2023-07-18,Spinning Top_Bullish,Green
+2023-07-18,Harami_Bearish,Green
+2023-07-21,Long Line_Bearish,Red
+2023-07-24,Harami_Bullish,Red
+2023-07-24,Homing Pigeon_Bullish,Red
+2023-07-25,Doji_Bullish,Green
+2023-07-25,Long Legged Doji_Bullish,Green
+2023-07-25,Short Line_Bullish,Green
+2023-07-25,Spinning Top_Bullish,Green
+2023-07-25,Rickshaw Man_Bullish,Green
+2023-07-27,Bullish Engulfing_Bearish,Red
+2023-07-27,Bearish Engulfing_Bearish,Red
+2023-07-28,Short Line_Bullish,Green
+2023-07-28,Harami_Bullish,Green
+2023-07-31,Short Line_Bullish,Green
+2023-07-31,Hanging Man_Bearish,Green
+2023-07-31,Three Inside Up/Down_Bullish,Green
+2023-08-01,Short Line_Bearish,Red
+2023-08-01,X Side Gap Three Methods_Bullish,Red
+2023-08-02,Long Line_Bearish,Red
+2023-08-02,Belt Hold_Bearish,Red
+2023-08-03,Spinning Top_Bearish,Red
+2023-08-08,Doji_Bullish,Green
+2023-08-08,Long Legged Doji_Bullish,Green
+2023-08-08,Spinning Top_Bullish,Green
+2023-08-08,Harami_Bullish,Green
+2023-08-08,Harami Cross_Bullish,Green
+2023-08-09,Bullish Engulfing_Bearish,Red
+2023-08-09,Bearish Engulfing_Bearish,Red
+2023-08-09,Belt Hold_Bearish,Red
+2023-08-10,Three Outside Up/Down_Bearish,Red
+2023-08-11,Spinning Top_Bullish,Green
+2023-08-14,Short Line_Bullish,Green
+2023-08-15,Short Line_Bearish,Red
+2023-08-15,X Side Gap Three Methods_Bullish,Red
+2023-08-16,Inverted Hammer_Bullish,Red
+2023-08-17,Long Line_Bearish,Red
+2023-08-18,Long Line_Bullish,Green
+2023-08-21,Hanging Man_Bearish,Green
+2023-08-22,Doji_Bullish,Green
+2023-08-22,Long Legged Doji_Bullish,Green
+2023-08-22,Spinning Top_Bullish,Green
+2023-08-22,Rickshaw Man_Bullish,Green
+2023-08-23,Long Line_Bullish,Green
+2023-08-23,Belt Hold_Bullish,Green
+2023-08-24,Long Line_Bearish,Red
+2023-08-25,Harami_Bullish,Green
+2023-08-28,Doji_Bullish,Green
+2023-08-28,Long Legged Doji_Bullish,Green
+2023-08-28,Spinning Top_Bullish,Green
+2023-08-28,Rickshaw Man_Bullish,Green
+2023-08-29,Belt Hold_Bullish,Green
+2023-08-30,Long Line_Bullish,Green
+2023-08-30,Marubozu_Bullish,Green
+2023-08-30,Belt Hold_Bullish,Green
+2023-08-31,Doji_Bullish,Green
+2023-08-31,Long Legged Doji_Bullish,Green
+2023-08-31,Spinning Top_Bullish,Green
+2023-08-31,Rickshaw Man_Bullish,Green
+2023-09-01,Doji_Bullish,Red
+2023-09-01,Long Legged Doji_Bullish,Red
+2023-09-01,Spinning Top_Bearish,Red
+2023-09-01,Rickshaw Man_Bullish,Red
+2023-09-05,Bullish Engulfing_Bullish,Green
+2023-09-05,Bearish Engulfing_Bullish,Green
+2023-09-08,Doji_Bullish,Red
+2023-09-08,Long Legged Doji_Bullish,Red
+2023-09-08,Spinning Top_Bearish,Red
+2023-09-08,Rickshaw Man_Bullish,Red
+2023-09-13,Long Line_Bearish,Red
+2023-09-14,Short Line_Bullish,Green
+2023-09-19,Short Line_Bullish,Green
+2023-09-20,Long Line_Bearish,Red
+2023-09-20,Bullish Engulfing_Bearish,Red
+2023-09-20,Bearish Engulfing_Bearish,Red
+2023-09-21,Inverted Hammer_Bullish,Red
+2023-09-21,Three Outside Up/Down_Bearish,Red
+2023-09-22,Doji_Bullish,Green
+2023-09-22,Long Legged Doji_Bullish,Green
+2023-09-22,Spinning Top_Bullish,Green
+2023-09-25,Belt Hold_Bullish,Green
+2023-09-26,Long Line_Bearish,Red
+2023-09-29,Spinning Top_Bearish,Red
+2023-10-02,Long Line_Bullish,Green
+2023-10-02,Belt Hold_Bullish,Green
+2023-10-03,Doji_Bullish,Green
+2023-10-03,Long Legged Doji_Bullish,Green
+2023-10-03,Spinning Top_Bullish,Green
+2023-10-03,Rickshaw Man_Bullish,Green
+2023-10-03,Harami_Bearish,Green
+2023-10-03,Harami Cross_Bearish,Green
+2023-10-04,Long Line_Bullish,Green
+2023-10-04,Belt Hold_Bullish,Green
+2023-10-06,Long Line_Bullish,Green
+2023-10-10,Doji_Bullish,Green
+2023-10-10,Gravestone Doji_Bullish,Green
+2023-10-10,Long Legged Doji_Bullish,Green
+2023-10-10,Harami_Bearish,Green
+2023-10-10,Harami Cross_Bearish,Green
+2023-10-11,Short Line_Bullish,Green
+2023-10-12,Spinning Top_Bullish,Green
+2023-10-13,Long Line_Bearish,Red
+2023-10-13,Bullish Engulfing_Bearish,Red
+2023-10-13,Bearish Engulfing_Bearish,Red
+2023-10-16,Long Line_Bullish,Green
+2023-10-16,Counterattack_Bullish,Green
+2023-10-16,Belt Hold_Bullish,Green
+2023-10-16,Three Outside Up/Down_Bearish,Green
+2023-10-17,Spinning Top_Bullish,Green
+2023-10-18,Doji_Bullish,Green
+2023-10-18,Long Legged Doji_Bullish,Green
+2023-10-18,Spinning Top_Bullish,Green
+2023-10-18,Rickshaw Man_Bullish,Green
+2023-10-19,Bullish Engulfing_Bearish,Red
+2023-10-19,Bearish Engulfing_Bearish,Red
+2023-10-20,Long Line_Bearish,Red
+2023-10-20,Marubozu_Bearish,Red
+2023-10-20,Belt Hold_Bearish,Red
+2023-10-20,Three Outside Up/Down_Bearish,Red
+2023-10-23,In Neck_Bearish,Green
+2023-10-23,Counterattack_Bullish,Green
+2023-10-27,Short Line_Bullish,Green
+2023-10-27,Harami_Bullish,Green
+2023-11-02,Long Line_Bullish,Green
+2023-11-02,Marubozu_Bullish,Green
+2023-11-02,Belt Hold_Bullish,Green
+2023-11-06,Long Line_Bullish,Green
+2023-11-06,Marubozu_Bullish,Green
+2023-11-06,Belt Hold_Bullish,Green
+2023-11-07,Belt Hold_Bullish,Green
+2023-11-08,Spinning Top_Bullish,Green
+2023-11-08,Advance Block_Bearish,Green
+2023-11-09,Spinning Top_Bearish,Red
+2023-11-10,Long Line_Bullish,Green
+2023-11-13,Harami_Bearish,Red
+2023-11-14,Doji_Bullish,Red
+2023-11-14,Long Legged Doji_Bullish,Red
+2023-11-14,Spinning Top_Bearish,Red
+2023-11-14,Rickshaw Man_Bullish,Red
+2023-11-15,Doji_Bullish,Green
+2023-11-15,Gravestone Doji_Bullish,Green
+2023-11-15,Long Legged Doji_Bullish,Green
+2023-11-15,Shooting Star_Bearish,Green
+2023-11-16,Doji_Bullish,Green
+2023-11-16,Long Legged Doji_Bullish,Green
+2023-11-16,Spinning Top_Bullish,Green
+2023-11-16,Rickshaw Man_Bullish,Green
+2023-11-20,Long Line_Bullish,Green
+2023-11-20,Belt Hold_Bullish,Green
+2023-11-21,Harami_Bearish,Red
+2023-11-22,Doji_Bullish,Red
+2023-11-22,Long Legged Doji_Bullish,Red
+2023-11-22,Spinning Top_Bearish,Red
+2023-11-24,Belt Hold_Bearish,Red
+2023-11-27,Doji_Bullish,Red
+2023-11-27,Long Legged Doji_Bullish,Red
+2023-11-27,Spinning Top_Bearish,Red
+2023-11-27,Rickshaw Man_Bullish,Red
+2023-11-28,Bullish Engulfing_Bullish,Green
+2023-11-28,Bearish Engulfing_Bullish,Green
+2023-11-28,Morning Star_Bullish,Green
+2023-11-28,Morning Doji Star_Bullish,Green
+2023-11-29,Bullish Engulfing_Bearish,Red
+2023-11-29,Bearish Engulfing_Bearish,Red
+2023-11-30,Doji_Bullish,Green
+2023-11-30,Long Legged Doji_Bullish,Green
+2023-11-30,Spinning Top_Bullish,Green
+2023-11-30,Harami_Bullish,Green
+2023-11-30,Harami Cross_Bullish,Green
+2023-12-01,Three Inside Up/Down_Bullish,Green
+2023-12-04,Hammer_Bullish,Red
+2023-12-05,Belt Hold_Bullish,Green
+2023-12-06,Long Line_Bearish,Red
+2023-12-07,Harami_Bullish,Green
+2023-12-08,Long Line_Bullish,Green
+2023-12-08,Three Inside Up/Down_Bullish,Green
+2023-12-11,Doji_Bullish,Green
+2023-12-11,Long Legged Doji_Bullish,Green
+2023-12-11,Spinning Top_Bullish,Green
+2023-12-13,Long Line_Bullish,Green
+2023-12-13,Marubozu_Bullish,Green
+2023-12-13,Belt Hold_Bullish,Green
+2023-12-14,Doji_Bullish,Green
+2023-12-14,Long Legged Doji_Bullish,Green
+2023-12-14,Spinning Top_Bullish,Green
+2023-12-14,Rickshaw Man_Bullish,Green
+2023-12-14,Advance Block_Bearish,Green
+2023-12-14,Stalled Pattern_Bearish,Green
+2023-12-15,Doji_Bullish,Green
+2023-12-15,Long Legged Doji_Bullish,Green
+2023-12-15,Spinning Top_Bullish,Green
+2023-12-15,Rickshaw Man_Bullish,Green
+2023-12-18,Doji_Bullish,Red
+2023-12-18,Long Legged Doji_Bullish,Red
+2023-12-18,Spinning Top_Bearish,Red
+2023-12-18,Rickshaw Man_Bullish,Red
+2023-12-19,Short Line_Bullish,Green
+2023-12-22,Long Line_Bearish,Red
+2023-12-22,Belt Hold_Bearish,Red
+2023-12-26,Short Line_Bearish,Red
+2023-12-28,Short Line_Bearish,Red

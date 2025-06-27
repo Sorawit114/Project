@@ -1,54 +1,49 @@
 import pandas as pd
 import yfinance as yf
 import talib
+from pattern_list import all_patterns as patterns  # Dictionary ของฟังก์ชันแพทเทิร์น
 
-# โหลดข้อมูลหุ้น
+# โหลดข้อมูลหุ้น AAPL
 df = yf.download('AAPL', start='2022-01-01', end='2023-12-31')
-df = df[['Open', 'High', 'Low', 'Close']]
-df.dropna(inplace=True)
 
-# เตรียม dictionary ของ pattern
-patterns = {
-    "Doji": talib.CDLDOJI,
-    "Hammer": talib.CDLHAMMER,
-    "ShootingStar": talib.CDLSHOOTINGSTAR,
-    "BullishEngulfing": talib.CDLENGULFING,
-    "BearishEngulfing": talib.CDLENGULFING
-}
+# ถ้ามี MultiIndex (เช่น 'AAPL', 'Open') ให้ลดระดับ
+if isinstance(df.columns, pd.MultiIndex):
+    df.columns = df.columns.droplevel(1)
 
-# สร้าง DataFrame เก็บผล pattern แต่ละแท่ง (0/1)
+# ใช้เฉพาะคอลัมน์ที่ต้องใช้
+df = df[['Open', 'High', 'Low', 'Close']].dropna()
+
+# เพิ่มคอลัมน์แสดงสีแท่งเทียน (Red = แท่งลง, Green = แท่งขึ้น)
+df['CandleColor'] = ['Red' if close < open_ else 'Green'
+                     for open_, close in zip(df['Open'], df['Close'])]
+
+# เตรียม DataFrame สำหรับเก็บ label ของแต่ละแพทเทิร์น
 labels_df = pd.DataFrame(index=df.index)
 
+# ตรวจจับ pattern ด้วย TA-Lib
 for name, func in patterns.items():
-    result = func(
-        df['Open'].values.reshape(-1),
-        df['High'].values.reshape(-1),
-        df['Low'].values.reshape(-1),
-        df['Close'].values.reshape(-1)
-    )
-    if name == "BearishEngulfing":
-        labels_df[name] = (result < 0).astype(int)
-    elif name == "BullishEngulfing":
-        labels_df[name] = (result > 0).astype(int)
-    else:
-        labels_df[name] = (result != 0).astype(int)
+    result = func(df['Open'].values,
+                  df['High'].values,
+                  df['Low'].values,
+                  df['Close'].values)
 
-# สร้าง list สำหรับเก็บข้อมูล pattern ที่เกิดขึ้นจริง
-pattern_events = []
+    labels_df[name] = [f"{name}_Bullish" if v > 0 else
+                       f"{name}_Bearish" if v < 0 else ""
+                       for v in result]
 
-# วนเช็กแต่ละแท่งใน labels_df
-for date, row in labels_df.iterrows():
-    for pattern_name, val in row.items():
-        if val == 1:
-            pattern_events.append({
-                'Date': date.strftime('%Y-%m-%d'),
-                'Pattern': pattern_name
-            })
+# รวมแพทเทิร์นที่ตรวจพบลงใน list
+pattern_events = [
+    {
+        'Date': date.strftime('%Y-%m-%d'),
+        'Pattern': val,
+        'CandleColor': df.loc[date, 'CandleColor']
+    }
+    for date, row in labels_df.iterrows()
+    for val in row.values if val
+]
 
-# สร้าง DataFrame ของ event pattern ที่เกิด
+# สร้าง DataFrame และบันทึกไฟล์
 pattern_events_df = pd.DataFrame(pattern_events)
-
-# เซฟไฟล์ CSV
 pattern_events_df.to_csv('pattern_detected_events.csv', index=False)
 
 print(f"บันทึกไฟล์ pattern_detected_events.csv จำนวน {len(pattern_events_df)} แถวเรียบร้อยแล้ว")
